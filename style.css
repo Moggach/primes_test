@@ -73,15 +73,14 @@ button {
 
   input {
     margin-top: 4rem;
-    width: 70%;
-    height: 4rem;
-    font-size: 2rem;
+    height: 5rem;
+    font-size: 3rem;
   }
 
   button {
     margin-top: 3rem;
-    font-size: 2rem;
-    padding: 1.3rem 2rem 1.3rem 2rem;
+    font-size: 4rem;
+    padding: 2rem 2.5rem 2rem 2.5rem;
   }
 
   p {
@@ -90,8 +89,9 @@ button {
   }
 
   .output-table {
-    width: 80%;
     margin-top: 2rem;
+    width: 100%;
+    font-size: 5rem;
   }
 
   .row {

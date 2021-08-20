@@ -8,6 +8,12 @@ var result;
 function onSubmit(e) {
   e.preventDefault();
   input = document.getElementById('number').value;
+  console.log(input);
+  if (input == 1) {
+    alert('oops, please enter the number 2 or larger');
+    return false;
+  }
+
   const data = multiplyPrimes(input);
   result = data.map(function (subArray) {
     return `<div class="row">${subArray.join('|')}</div>`;
