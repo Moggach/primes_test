@@ -1,17 +1,24 @@
 //declaring global variable input
 var input;
 
+//declaring global variable result
+var result;
+
 //funtion to handle form submit and update input value
 function onSubmit(e) {
   e.preventDefault();
   input = document.getElementById('number').value;
   const data = multiplyPrimes(input);
-  console.log(data);
+  result = data.map(function (subArray) {
+    return `<p>${subArray.join('|')}</p>`;
+  });
+
   const output = `
-  <div class="output-primes">
-  <p>${data}</p>
+  <div class="output-table">
+  
+   ${result.join('')}
   </div>`;
-  const display = document.getElementById('output-primes');
+  const display = document.getElementById('output-table');
   display.innerHTML = output;
 }
 
@@ -55,7 +62,8 @@ function primesArray(input) {
 //function to generate nested array for multiplication table
 function multiplyPrimes(input) {
   let primes = primesArray(input);
-  let initArr = ['|'].concat(primes);
+  let initArr = [' '].concat(primes);
+  console.log(initArr);
 
   let product = [initArr];
 
