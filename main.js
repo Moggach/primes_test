@@ -1,20 +1,21 @@
 //declaring global variable input
-var input;
+let input;
 
 //declaring global variable result
-var result;
+let result;
 
 //funtion to handle form submit and update input value
 function onSubmit(e) {
   e.preventDefault();
   input = document.getElementById('number').value;
-  console.log(input);
+
   if (input == 1) {
     alert('oops, please enter the number 2 or larger');
     return false;
   }
 
   const data = multiplyPrimes(input);
+
   result = data.map(function (subArray) {
     return `<div class="row">${subArray.join('|')}</div>`;
   }); //O(n)
@@ -26,6 +27,7 @@ function onSubmit(e) {
   </div>`;
   const display = document.getElementById('output-table');
   display.innerHTML = output;
+  display.scrollIntoView({ behavior: 'smooth' });
 }
 
 //adding event listener to submit button

@@ -64,7 +64,11 @@ button {
   }
 
   h1 {
-    font-size: 7rem;
+    font-size: 10rem;
+  }
+
+  img {
+    width: 80%;
   }
 
   form {
@@ -96,6 +100,6 @@ button {
 
   .row {
     margin-bottom: 0.8rem;
-    font-size: 3rem;
+    font-size: 4rem;
   }
 }
