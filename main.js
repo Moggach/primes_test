@@ -71,7 +71,6 @@ function primesArray(input) {
 function multiplyPrimes(input) {
   let primes = primesArray(input);
   let initArr = [' '].concat(primes);
-  console.log(initArr);
 
   let product = [initArr];
 
