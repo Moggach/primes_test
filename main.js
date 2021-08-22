@@ -18,7 +18,7 @@ function onSubmit(e) {
 
   result = data.map(function (subArray) {
     return `<div class="row">${subArray.join('|')}</div>`;
-  }); //O(n)
+  });
 
   const output = `
   <div class="output-table">
@@ -33,7 +33,7 @@ function onSubmit(e) {
 //adding event listener to submit button
 document.getElementById('submit').addEventListener('click', onSubmit);
 
-//function testing to see if number is prime using seive of Eratosthenes - O(N log (log N))
+//function testing to see if number is prime using seive of Eratosthenes
 function isPrime(input) {
   const numberSqrt = Math.floor(Math.sqrt(input));
   let i = 2;
@@ -48,7 +48,7 @@ function isPrime(input) {
   return true;
 }
 
-//creates array of prime values - O(n)
+//creates array of prime values
 function primesArray(input) {
   //initialising array
   let primes = [];
@@ -67,7 +67,7 @@ function primesArray(input) {
   return primes;
 }
 
-//function to generate nested array for multiplication table - O(n2)
+//function to generate nested array for multiplication table
 function multiplyPrimes(input) {
   let primes = primesArray(input);
   let initArr = [' '].concat(primes);
