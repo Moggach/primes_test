@@ -1,4 +1,3 @@
-//test helper functions for primitive values
 function equal(actual, expected, message) {
   if (JSON.stringify(actual) === JSON.stringify(expected)) {
     const defaultMessage = `Expected ${expected} and received ${actual}`;
@@ -10,7 +9,7 @@ function equal(actual, expected, message) {
 }
 
 function notEqual(actual, expected, message) {
-  if (JSON.stringify(actual) === JSON.stringify(expected)) {
+  if (JSON.stringify(actual) !== JSON.stringify(expected)) {
     const defaultMessage = `${expected} is different to ${actual}`;
     console.info('Pass: ' + (message || defaultMessage));
   } else {

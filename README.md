@@ -6,7 +6,7 @@ This programme runs in the browser. Please open [this page](https://moggach.gith
 
 This project contains four functions that all perform specific tasks.
 
-1. `function isPrime()` tests whether a given number input is prime. This function uses the sieve of Eratosthenes algorithm which has a big O notation O(N log (log N)).
+1. `function isPrime()` tests whether a given number input is prime.
 
 2. `function primesArray()` takes a number input (n) from the user and generates an array of prime numbers of length (n). I believe that the big O notation of this part of the programme is O(n).
 
@@ -53,4 +53,4 @@ User input:
 - Separate out the logic contained within the `onSubmit()` function into different functions. This would enable better unit testing (see above).
 - Try to find a more efficient way of producing the multiplication table without nested arrays
 - Try to find a better way of displaying larger outputs onto the page. Right now they require the user to scroll/stretch the layout.
-- I could also try to implement a modified (or segmented) version of the Sieve of Eratosthenes.
+- I could also try to implement a version of the Sieve of Eratosthenes to check the primes.
